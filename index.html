@@ -3,10 +3,174 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styl e.css"rel="stylesheet">
   </head>
+
   <body>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Базовый HTML и CSS</a>».</p>
+    <header class="page-header">
+
+      <div class="logo">
+        <a class="logo__link">
+          <img class="logo__picture" src="img/index-logo.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
+        </a>
+      </div>
+
+      <nav class="menu">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
+          <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+          <li class="menu__item"><a href="price.html" class="menu__link">Прайс-лист</a></li>
+          <li class="menu__item"><a href="catalog.html" class="menu__link">Магазин</a></li>
+          <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+        </ul>
+        <ul class="menu__user">
+          <li class="menu__login"><a href="#" class="menu__link">Вход</a></li>
+        </ul>
+      </nav>
+
+      </header>
+
+      <main class="container">
+
+        <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
+
+        <section class="features">
+          <h2 class="visually-hidden">Особенности</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <h3 class="title title--white">Быстро</h3>
+              <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы - счастливый обладатель стильной стрижки-минутки!</p>
+            </li>
+            <li class="features__item">
+              <h3 class="title title--white">Круто</h3>
+              <p>Забудьте как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино! Во всяком случае внешне.</p>
+            </li>
+            <li class="features__item">
+              <h3 class="title title--white">Дорого</h3>
+              <p>Наши мастера - профессионалы своего дела и не могут стоять дешево. К тому же, разве цена не дает определенный статус?</p>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news">
+          <h2 class="title">Новости</h2>
+          <ul class="news__list">
+            <li class="news__item">
+              <p>Нам наконец завезли Ягермайстер! Теперь вы можете пропустить стаканчик во время стрижки</p>
+              <time datetime="2017-01-11">11  января</time>
+            </li>
+            <li class="news__item">
+              <p>В нашей команде пополнение, Борис «Бритва» стригунец, бладатель множества титулов и наград пополнил наши стройные ряды</p>
+              <time datetime="2017-01-18">18  января</time>
+            </li>
+          </ul>
+          <a class="button" href="news.html">Все новости</a>
+        </section>
+
+        <section class="gallery">
+          <h2 class="title">Фотогалерея</h2>
+          <figure class="gallery__list">
+            <img src="img/photo-1.jpg" width="" height="" alt="Фотография зала">
+          </figure>
+          <button class="button gallery__list--prev" disabled>Назад</button>
+          <button class="button gallery__list--next">Вперед</button>
+        </section>
+
+        <section class="contacts">
+          <h2 class="title">Контактная информация</h2>
+          <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+            Телефон: +7(495)666-02-66
+          </p>
+          <p>
+            Время работы:<br>
+            пн - пт: с 10:00 до 22:00<br>
+            сб - вс: с 10:00 до 19:00
+          </p>
+          <a href="#" class="button">Как проехать</a>
+          <a href="#" class="button">Обратная связь</a>
+        </section>
+
+        <section class="register">
+          <h2 class="title">Записаться</h2>
+          <p class="register__info">Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони</p>
+
+          <form class="register__form" action="#" method="post">
+            <p>
+              Дата
+              <input type="text" name="date" placeholder="08.10.2017">
+            </label>
+            <p>
+              Время
+              <input type="text" name="time" placeholder="10:00">
+            </p>
+            <p>
+              Ваше имя
+              <input type="text" name="name" placeholder="Борода">
+            </p>
+            <p>
+              Телефон
+              <input type="tel" name="phone" placeholder="+7 123 456-78-90">
+            </p>
+            <input class="button" type="submit" value="Отправить"></input>
+          </form>
+
+        </section>
+
+      </main>
+
+      <footer class="page-footer">
+
+        <div class="footer__contacts">
+          <p>
+            Барбершоп «Бородинский»<br>
+            Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+            <a href="#">Как нас найти?</a><br>
+            Телефон: +7(495)666-02-66
+          </p>
+        </div>
+
+        <div class="footer__social">
+          <b>Давайте дружить!</b>
+          <a href="#" class="social-button social-button-vk">Вконтакте</a>
+          <a href="#" class="social-button social-button-fb">Файсбук</a>
+          <a href="#" class="social-button social-button-ig">Инстаграмм</a>
+        </div>
+
+        <div class="footer__copyright">
+          <b>Разработано</b>
+          <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+         </div>
+
+        </footer>
+
+        <section class="popup popup__login">
+          <h2 class="title">Личный кабинет</h2>
+          <p>Введите пожалуйста свой логин и пароль</p>
+          <form class="form-login" action="#" method="post">
+            <p>
+              <input class="form-login__user" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+              <input class="form-login__password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="form-login__remember">
+              <input class="visually-hidden" type="checkbox" name="remember" checked>
+              Запомните меня
+              <a href="#" class="form-login__recovery">Я забыл пароль</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+          </form>
+          <span class="popup--close">x</span>
+        </section>
+
+        <section class="popup popup__map">
+          <h2 class="visually-hidden">Как до нас добраться</h2>
+          <span class="popup--close">x</span>
+        </section>
 
   </body>
 </html>
