@@ -26,7 +26,7 @@
           <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
         </ul>
         <ul class="menu__user">
-          <li class="menu__login"><a href="#" class="menu__link">Вход</a></li>
+          <li class="menu__login"><a href="login.html" class="menu__link">Вход</a></li>
         </ul>
       </nav>
 
@@ -72,7 +72,9 @@
         <section class="gallery">
           <h2 class="title">Фотогалерея</h2>
           <figure class="gallery__list">
-            <img src="img/photo-1.jpg" width="" height="" alt="Фотография зала">
+            <a href="#">
+              <img src="img/photo-1.jpg" width="286" height="164" alt="Фотография зала">
+            </a>
           </figure>
           <button class="button gallery__list--prev" disabled>Назад</button>
           <button class="button gallery__list--next">Вперед</button>
@@ -100,22 +102,21 @@
 
           <form class="register__form" action="#" method="post">
             <p>
-              Дата
-              <input type="text" name="date" placeholder="08.10.2017">
-            </label>
+              <label class="register__label" for="input-date">Дата</label>
+              <input type="text" name="date" placeholder="08.10.2017" id="input-date">
             <p>
-              Время
-              <input type="text" name="time" placeholder="10:00">
+              <label class="register__label" for="input-time">Время</label>
+              <input type="text" name="time" placeholder="10:00" id="input-time">
             </p>
             <p>
-              Ваше имя
-              <input type="text" name="name" placeholder="Борода">
+              <label class="register__label" for="input-name">Ваше имя</label>
+              <input type="text" name="name" placeholder="Борода" id="input-name">
             </p>
             <p>
-              Телефон
-              <input type="tel" name="phone" placeholder="+7 123 456-78-90">
+              <label class="register__label" for="input-phone">Телефон</label>
+              <input type="tel" name="phone" placeholder="+7 123 456-78-90" id="input-phone">
             </p>
-            <input class="button" type="submit" value="Отправить"></input>
+            <button class="button" type="submit">Отправить</button>
           </form>
 
         </section>
@@ -152,24 +153,32 @@
           <p>Введите пожалуйста свой логин и пароль</p>
           <form class="form-login" action="#" method="post">
             <p>
-              <input class="form-login__user" type="text" name="login" placeholder="Логин">
+              <label class="visually-hidden" for="user-login">Логин</label>
+              <input class="form-login__user" type="text" name="login" placeholder="Логин" id="user-login">
             </p>
             <p>
-              <input class="form-login__password" type="password" name="password" placeholder="Пароль">
+              <label class="visually-hidden" for="user-password">Пароль</label>
+              <input class="form-login__password" type="password" name="password" placeholder="Пароль" id="user-password">
             </p>
             <p class="form-login__remember">
-              <input class="visually-hidden" type="checkbox" name="remember" checked>
-              Запомните меня
+              <label class="form-login__checkbox">
+                <input class="visually-hidden" type="checkbox" name="remember" checked>
+                <span class="checkbox-indicator"></span>
+                Запомните меня
+              </label>
               <a href="#" class="form-login__recovery">Я забыл пароль</a>
             </p>
             <button class="button" type="submit">Войти</button>
           </form>
-          <span class="popup--close">x</span>
+          <button class="popup--close" type="button">Закрыть</button>
         </section>
 
         <section class="popup popup__map">
           <h2 class="visually-hidden">Как до нас добраться</h2>
-          <span class="popup--close">x</span>
+          <p>
+            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+          </p>
+          <button class="popup--close" type="button">Закрыть</button>
         </section>
 
   </body>
