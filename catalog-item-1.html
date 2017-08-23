@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,7 +14,7 @@
 
       <nav class="menu">
         <a href="index.html" class="logo">
-          <img class="logo__picture" src="img/index-logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+          <img class="logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul class="menu__list">
           <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
@@ -29,7 +30,7 @@
 
       </header>
 
-      <main class="container">
+      <main class="container row">
 
         <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
         <ul class="breadcrumbs">
@@ -44,9 +45,17 @@
           <p class="product__photo">
             <img src="img/product-1-big.jpg" width="460" height="498" alt="Фото всего набора">
           </p>
-          <img src="img/product-1-small.jpg" width="140" height="149" alt="Фото набора">
-          <img src="img/product-1-small2.jpg" width="140" height="149" alt="Фото косметички">
-          <img src="img/product-1-small3.jpg" width="140" height="149" alt="Фото набора">
+          <ul class="product__photos">
+            <li>
+              <img src="img/product-1-small.jpg" width="140" height="149" alt="Фото набора">
+            </li>
+            <li>
+              <img src="img/product-1-small2.jpg" width="140" height="149" alt="Фото косметички">
+            </li>
+            <li>
+              <img src="img/product-1-small3.jpg" width="140" height="149" alt="Фото набора">
+            </li>
+          </ul>
         </section>
 
         <section class="product__info">

@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,12 +14,12 @@
 
       <nav class="menu">
         <a href="index.html" class="logo">
-          <img class="logo__picture" src="img/index-logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+          <img class="logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul class="menu__list">
           <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
           <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
-          <li class="menu__item"><a href="price.html" class="menu__link">Прайс-лист</a></li>
+          <li class="menu__item"><a class="menu__link">Прайс-лист</a></li>
           <li class="menu__item"><a href="catalog.html" class="menu__link menu__link--active">Магазин</a></li>
           <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
         </ul>
@@ -29,7 +30,7 @@
 
       </header>
 
-      <main class="container">
+      <main class="container row">
 
         <h1 class="title">Прайс-лист</h1>
         <ul class="breadcrumbs">
@@ -40,7 +41,7 @@
           Истинно мужская слассика
         </div>
         <section class="designation">
-          <h2 class="subtitle">Мы используем только лучшие средства</h2>
+          <h2 class="subtitle">Мы используем только лучшие средства:</h2>
           <ul class="designation__list">
             <li class="designation__item">Baxter of California</li>
             <li class="designation__item">Mr Natty</li>
@@ -49,21 +50,23 @@
           </ul>
         </section>
         <section class="about">
-          <h2 class="subtitle">Несколько слов о нас</h2>
+          <h2 class="subtitle">Несколько слов о нас:</h2>
           <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
           <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
         </section>
         <section class="price">
-          <h2 class="subtitle">Цены на услуги наших мастеров</h2>
+          <h2 class="subtitle">Цены на услуги наших мастеров:</h2>
           <table class="price__table">
             <tr>
               <th>Стрижка</th>
-              <th>Стрижка бороды</th>
-              <th>Накрутка усов</th>
+              <td>1500 ₽</td>
             </tr>
             <tr>
-              <td>1500 ₽</td>
+              <th>Стрижка бороды</th>
               <td>500 ₽</td>
+            </tr>
+            <tr>
+              <th>Накрутка усов</th>
               <td>350 ₽</td>
             </tr>
           </table>

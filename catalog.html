@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Барбершоп</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -13,7 +14,7 @@
 
       <nav class="menu">
         <a href="index.html" class="logo">
-          <img class="logo__picture" src="img/index-logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+          <img class="logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul class="menu__list">
           <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
@@ -29,7 +30,7 @@
 
       </header>
 
-      <main class="container">
+      <main class="container row">
 
         <h1 class="title">Средства для ухода</h1>
         <ul class="breadcrumbs">
@@ -58,8 +59,8 @@
                   <label for="filter-suavecito">Suavecito</label>
                 </li>
                 <li class="filter__item">
-                  <input class="visually-hidden filter__input" type="checkbox" name="malin+goetz" id="filter-malin-goetz">
-                  <label for="filter-malin-goetz">Malin+Goetz</label
+                  <input class="visually-hidden filter__input" type="checkbox" name="malin+goetz" id="filter-malin-goetz" disabled>
+                  <label for="filter-malin-goetz">Malin+Goetz</label>
                 </li>
                 <li class="filter__item">
                   <input class="visually-hidden filter__input" type="checkbox" name="murrays" id="filter-murrays">
@@ -80,11 +81,11 @@
                 </li>
                 <li class="filter__item">
                   <input class="visually-hidden filter__input" type="radio" name="product-group" id="filter-care" checked>
-                  <label for="filter-care">Средства для ухода</lab
+                  <label for="filter-care">Средства для ухода</label>
                 </li>
                 <li class="filter__item">
                   <input class="visually-hidden filter__input" type="radio" name="product-group" id="filter-accessories">
-                  <label for="filter-accessories">Аксессуары</label
+                  <label for="filter-accessories">Аксессуары</label>
                 </li>
               </ul>
             </fieldset>
