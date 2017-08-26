@@ -8,13 +8,13 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="inner-page">
 
     <header class="page-header">
 
-      <nav class="menu">
-        <a href="index.html" class="logo">
-          <img class="logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
+      <nav class="menu container">
+        <a href="index.html" class="main-logo">
+          <img class="main-logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
         <ul class="menu__list">
           <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
@@ -32,76 +32,75 @@
 
       <main class="container row">
 
-        <h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
+        <h1 class="title">Набор для путешествий «Baxter of California»</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs__item"><a href="index.html">Главная</a></li>
           <li class="breadcrumbs__item"><a href="catalog.html">Магазин</a></li>
           <li class="breadcrumbs__item"><a href="#">Средства для ухода</a></li>
           <li class="breadcrumbs__item breadcrumbs__item--active">Набор для путешествий «Baxter of California»</li>
         </ul>
+        <div class="product__wrapper">
+          <section class="product">
+            <h2 class="visually-hidden">Изображение товара</h2>
+            <p class="product__photo">
+              <img src="img/product-1-big.jpg" width="460" height="498" alt="Фото всего набора">
+            </p>
+            <ul class="product__photos">
+              <li>
+                <img src="img/product-1-small.jpg" width="140" height="149" alt="Фото набора">
+              </li>
+              <li>
+                <img src="img/product-1-small2.jpg" width="140" height="149" alt="Фото косметички">
+              </li>
+              <li>
+                <img src="img/product-1-small3.jpg" width="140" height="149" alt="Фото набора">
+              </li>
+            </ul>
+          </section>
 
-        <section class="product">
-          <h2 class="visually-hidden">Изображение товара</h2>
-          <p class="product__photo">
-            <img src="img/product-1-big.jpg" width="460" height="498" alt="Фото всего набора">
-          </p>
-          <ul class="product__photos">
-            <li>
-              <img src="img/product-1-small.jpg" width="140" height="149" alt="Фото набора">
-            </li>
-            <li>
-              <img src="img/product-1-small2.jpg" width="140" height="149" alt="Фото косметички">
-            </li>
-            <li>
-              <img src="img/product-1-small3.jpg" width="140" height="149" alt="Фото набора">
-            </li>
-          </ul>
-        </section>
-
-        <section class="product__info">
-          <h2 class="visually-hidden">Описание товара</h2>
-          <p class="product__availability">Есть в наличии</p>
-          <p class="product__article">Артикул: Dexter-ae</p>
-          <p class="product__text">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-          <p class="product__price">
-            <b>2 900 ₽</b>
-            <a class="button">Купить</a>
-          </p>
-          <h3 class="subtitle">В набор входят:</h3>
-          <ul class="product__list">
-            <li class="product__item">Средство для умывания (50 мл)</li>
-            <li class="product__item">Увлажняющий крем (50 мл)</li>
-            <li class="product__item">Крем для бритья (50 мл)</li>
-            <li class="product__item">Крем после бритья, шампунь (50 мл)</li>
-            <li class="product__item">Удобная кожаная косметичка</li>
-          </ul>
-        </section>
+          <section class="product__info">
+            <h2 class="visually-hidden">Описание товара</h2>
+            <p class="product__describes">Есть в наличии</p>
+            <p class="product__article">Артикул: Dexter-ae</p>
+            <p class="product__describes">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <p class="product__price">
+              <b>2 900 ₽</b>
+              <a class="button">Купить</a>
+            </p>
+            <h3 class="subtitle">В набор входят:</h3>
+            <ul class="product__list">
+              <li class="product__item">Средство для умывания (50 мл)</li>
+              <li class="product__item">Увлажняющий крем (50 мл)</li>
+              <li class="product__item">Крем для бритья (50 мл)</li>
+              <li class="product__item">Крем после бритья, шампунь (50 мл)</li>
+              <li class="product__item">Удобная кожаная косметичка</li>
+            </ul>
+          </section>
+        </div>
 
       </main>
 
       <footer class="page-footer">
-
-        <div class="footer__contacts">
-          <p>
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7(495)666-02-66
+        <div class="container">
+          <p class="footer__contacts">
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+              <a href="#">Как нас найти?</a><br>
+              Телефон: +7(495)666-02-66
           </p>
-        </div>
 
-        <div class="footer__social">
-          <b>Давайте дружить!</b>
-          <a href="#" class="social-button social-button-vk">Вконтакте</a>
-          <a href="#" class="social-button social-button-fb">Файсбук</a>
-          <a href="#" class="social-button social-button-ig">Инстаграмм</a>
-        </div>
+          <div class="footer__social">
+            <b>Давайте дружить!</b>
+            <a href="#" class="social-button social-button--vk">Вконтакте</a>
+            <a href="#" class="social-button social-button--fb">Файсбук</a>
+            <a href="#" class="social-button social-button--ig">Инстаграмм</a>
+          </div>
 
-        <div class="footer__copyright">
-          <b>Разработано</b>
-          <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+          <div class="footer__copyright">
+            <b>Разработано:</b>
+            <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+          </div>
         </div>
-
       </footer>
 
   </body>

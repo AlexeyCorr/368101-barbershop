@@ -8,11 +8,11 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
 
-  <body>
+  <body class="inner-page">
 
     <header class="page-header">
 
-      <nav class="menu">
+      <nav class="menu container">
         <a href="index.html" class="logo">
           <img class="logo__picture" src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа Бородинский">
         </a>
@@ -40,63 +40,68 @@
         <div class="tagline">
           Истинно мужская слассика
         </div>
-        <section class="designation">
-          <h2 class="subtitle">Мы используем только лучшие средства:</h2>
-          <ul class="designation__list">
-            <li class="designation__item">Baxter of California</li>
-            <li class="designation__item">Mr Natty</li>
-            <li class="designation__item">Suavecito</li>
-            <li class="designation__item">Malin+Goetz</li>
-          </ul>
-        </section>
+
+        <div class="price-wrapper">
+          <section class="designation">
+            <h2 class="subtitle">Мы используем только лучшие средства:</h2>
+            <ul class="designation__list">
+              <li class="designation__item">Baxter of California</li>
+              <li class="designation__item">Mr Natty</li>
+              <li class="designation__item">Suavecito</li>
+              <li class="designation__item">Malin+Goetz</li>
+            </ul>
+          </section>
+
+          <section class="price">
+            <h2 class="subtitle">Цены на услуги наших мастеров:</h2>
+            <table class="price__table">
+              <tr>
+                <th>Стрижка</th>
+                <td>1500 ₽</td>
+              </tr>
+              <tr>
+                <th>Стрижка бороды</th>
+                <td>500 ₽</td>
+              </tr>
+              <tr>
+                <th>Накрутка усов</th>
+                <td>350 ₽</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+
         <section class="about">
           <h2 class="subtitle">Несколько слов о нас:</h2>
-          <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
-          <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
-        </section>
-        <section class="price">
-          <h2 class="subtitle">Цены на услуги наших мастеров:</h2>
-          <table class="price__table">
-            <tr>
-              <th>Стрижка</th>
-              <td>1500 ₽</td>
-            </tr>
-            <tr>
-              <th>Стрижка бороды</th>
-              <td>500 ₽</td>
-            </tr>
-            <tr>
-              <th>Накрутка усов</th>
-              <td>350 ₽</td>
-            </tr>
-          </table>
+          <div class="about-wrapper">
+            <p>Наша парикмахерская занимается исключительно мужскими стрижками. Стрижка каждого клиента для нас - это уникальная и продуманная до мелочей работа. Мы не работаем на количество, мы делаем качество.</p>
+            <p>Наша мастерская расположена в центре города, поэтому сделать стильную стрижку можно в любое время, даже в обеденный перерыв. Здесь вы можете погрузиться в удобную для вас атмосферу, чувствовать себя комфортно и свободно!</p>
+          </div>
         </section>
 
       </main>
 
       <footer class="page-footer">
-
-        <div class="footer__contacts">
-          <p>
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7(495)666-02-66
+        <div class="container">
+          <p class="footer__contacts">
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+              <a href="#">Как нас найти?</a><br>
+              Телефон: +7(495)666-02-66
           </p>
-        </div>
 
-        <div class="footer__social">
-          <b>Давайте дружить!</b>
-          <a href="#" class="social-button social-button-vk">Вконтакте</a>
-          <a href="#" class="social-button social-button-fb">Файсбук</a>
-          <a href="#" class="social-button social-button-ig">Инстаграмм</a>
-        </div>
+          <div class="footer__social">
+            <b>Давайте дружить!</b>
+            <a href="#" class="social-button social-button--vk">Вконтакте</a>
+            <a href="#" class="social-button social-button--fb">Файсбук</a>
+            <a href="#" class="social-button social-button--ig">Инстаграмм</a>
+          </div>
 
-        <div class="footer__copyright">
-          <b>Разработано</b>
-          <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+          <div class="footer__copyright">
+            <b>Разработано:</b>
+            <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+          </div>
         </div>
-
       </footer>
 
   </body>

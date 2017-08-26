@@ -13,19 +13,25 @@
     <header class="page-header">
 
       <nav class="menu">
-        <a class="logo__link">
-          <img class="logo__picture" src="img/index-logo.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
+        <a class="main-logo">
+          <img class="main-logo__picture" src="img/index-logo.svg" width="371" height="155" alt="Логотип барбершопа Бородинский">
         </a>
-        <ul class="menu__list">
-          <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
-          <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
-          <li class="menu__item"><a href="price.html" class="menu__link">Прайс-лист</a></li>
-          <li class="menu__item"><a href="catalog.html" class="menu__link">Магазин</a></li>
-          <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
-        </ul>
-        <ul class="menu__user">
-          <li class="menu__login"><a href="login.html" class="menu__link">Вход</a></li>
-        </ul>
+        <div class="menu__wrapper">
+          <div class="container">
+            <ul class="menu__list">
+              <li class="menu__item"><a href="info.html" class="menu__link">Информация</a></li>
+              <li class="menu__item"><a href="news.html" class="menu__link">Новости</a></li>
+              <li class="menu__item"><a href="price.html" class="menu__link">Прайс-лист</a></li>
+              <li class="menu__item"><a href="catalog.html" class="menu__link">Магазин</a></li>
+              <li class="menu__item"><a href="contacts.html" class="menu__link">Контакты</a></li>
+            </ul>
+            <ul class="menu__user">
+              <li class="menu__login">
+                <a href="login.html" class="menu__link">Вход</a>
+              </li>
+            </ul>
+            </div>
+        </div>
       </nav>
 
       </header>
@@ -52,7 +58,7 @@
           </ul>
         </section>
 
-        <div class="row">
+        <div class="index-row">
           <section class="news">
             <h2 class="title">Новости</h2>
             <ul class="news__list">
@@ -80,7 +86,7 @@
           </section>
         </div>
 
-        <div class="row">
+        <div class="index-row">
           <section class="contacts">
             <h2 class="title">Контактная информация</h2>
             <p>
@@ -126,26 +132,25 @@
       </main>
 
       <footer class="page-footer">
-
-        <div class="footer__contacts">
-          <p>
-            Барбершоп «Бородинский»<br>
-            Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
-            <a href="#">Как нас найти?</a><br>
-            Телефон: +7(495)666-02-66
+        <div class="container">
+          <p class="footer__contacts">
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б.Конюшенная, д. 19/8<br>
+              <a href="#">Как нас найти?</a><br>
+              Телефон: +7(495)666-02-66
           </p>
-        </div>
 
-        <div class="footer__social">
-          <b>Давайте дружить!</b>
-          <a href="#" class="social-button social-button--vk">Вконтакте</a>
-          <a href="#" class="social-button social-button--fb">Файсбук</a>
-          <a href="#" class="social-button social-button--ig">Инстаграмм</a>
-        </div>
+          <div class="footer__social">
+            <b>Давайте дружить!</b>
+            <a href="#" class="social-button social-button--vk">Вконтакте</a>
+            <a href="#" class="social-button social-button--fb">Файсбук</a>
+            <a href="#" class="social-button social-button--ig">Инстаграмм</a>
+          </div>
 
-        <div class="footer__copyright">
-          <b>Разработано:</b>
-          <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+          <div class="footer__copyright">
+            <b>Разработано:</b>
+            <a href="htmlacademy.ru" class="button">HtmlAcademy</a>
+           </div>
          </div>
 
         </footer>
